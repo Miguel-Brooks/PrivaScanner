@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "PrivaScanner",
+  "version": "1.0",
+  "description": "Analizador de Términos, Condiciones y Politicas de Privacidad",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "estilos.css"
+      ],
+      "js": [
+        "contenido.js"
+      ]
+    }
+  ]
+}

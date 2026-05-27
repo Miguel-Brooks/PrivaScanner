@@ -1,0 +1,73 @@
+#privascanner-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 999999;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+#privascanner-panel .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+#privascanner-panel .header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+#privascanner-panel #privascanner-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+    transition: color 0.2s;
+}
+
+#privascanner-panel #privascanner-close:hover {
+    color: #e74c3c;
+}
+
+#privascanner-content {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#privascanner-content h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #2980b9;
+    font-size: 15px;
+}
+
+#privascanner-content h4:first-child {
+    margin-top: 0;
+}
+
+#privascanner-content p {
+    margin: 0 0 10px 0;
+}
+
+#privascanner-content li {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
